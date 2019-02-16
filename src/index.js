@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./static/css/style.css";
-import Homepage from "./pages/homepage";
-
-// ReactDOM.render(<App />, document.getElementById("root"));
+import Homepage from "./components/homepage";
 
 ReactDOM.render(<Homepage />, document.getElementById("root"));
 
