@@ -17,7 +17,9 @@ class Homepage extends Component {
           <div className="container">
             <div className="container-item">
               <div className="item-detail">
-                <img src="#" alt="k" />
+                <div className="item-image">
+                  <img src="#" alt="k" />
+                </div>
                 <div className="title">
                   <a href="http://youtube.com">Bu başlık</a>
                 </div>
