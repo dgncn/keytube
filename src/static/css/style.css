@@ -43,11 +43,15 @@ body {
 .container .container-item {
   display: inline-block;
   width: 31.3%;
-  border: 2px solid;
+  border: 2px solid #fff;
   box-sizing: border-box;
-  margin: 0 1%;
+  margin: 15px 1%;
+  border-radius: 5px;
+  background-color: #e9b000;
 }
-
+.container .container-item:hover {
+  box-shadow: 0px 0px 10px;
+}
 .footer {
   padding: 25px 0;
   text-align: center;
@@ -98,23 +102,19 @@ body {
 .title {
   height: 50px;
   width: 85%;
+  display: inline-block;
 }
 .title a {
   text-decoration: none;
-  color: #faefcc;
+  color: #fff;
   font-size: 18px;
   display: inline-block;
-  /*margin-top: 20%;*/
-  padding-left: 10px;
+  padding: 10px;
 }
 .item-image {
   width: 15%;
-  display: inline-block;
+  float: left;
 }
 .item-image img {
-  padding: 10px;
   box-sizing: border-box;
-}
-.title {
-  width: 80%;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContainerItem from "./ContainerItem";
 
 class Homepage extends Component {
   render() {
@@ -15,36 +16,8 @@ class Homepage extends Component {
             </div>
           </div>
           <div className="container">
-            <div className="container-item">
-              <div className="item-detail">
-                <div className="item-image">
-                  <img src="#" alt="k" />
-                </div>
-                <div className="title">
-                  <a href="http://youtube.com">Bu başlık</a>
-                </div>
-              </div>
-              <div className="item-detail">
-                <img src="#" alt="k" />
-                <div className="title">
-                  <a href="http://youtube.com">Bu başlık</a>
-                </div>
-              </div>
-              <div className="item-detail">
-                <img src="#" alt="k" />
-                <div className="title">
-                  <a href="http://youtube.com">Bu başlık</a>
-                </div>
-              </div>
-            </div>
-            <div className="container-item">
-              <img src="#" alt="k" />
-              <div className="title">Bu başlık</div>
-            </div>
-            <div className="container-item">
-              <img src="#" alt="k" />
-              <div className="title">Bu başlık</div>
-            </div>
+            <ContainerItem />
+            <ContainerItem />
           </div>
         </div>
         <div className="footer">
