@@ -16,8 +16,7 @@ class Homepage extends Component {
             </div>
           </div>
           <div className="container">
-            <ContainerItem />
-            <ContainerItem />
+            <ContainerItem items={obj.ids} />
           </div>
         </div>
         <div className="footer">
@@ -27,5 +26,9 @@ class Homepage extends Component {
     );
   }
 }
+
+const obj = {
+  ids: ["hey", "lol", "ck"]
+};
 
 export default Homepage;

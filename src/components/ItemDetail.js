@@ -8,7 +8,7 @@ class ItemDetail extends Component {
           <img src="https://via.placeholder.com/50/008000" alt="k" />
         </div>
         <div className="title">
-          <a href="http://youtube.com">Bu başlık {this.props.myprop}</a>
+          <a href="http://youtube.com">Bu başlık {this.props.name}</a>
         </div>
       </div>
     );
