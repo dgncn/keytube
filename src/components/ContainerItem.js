@@ -1,10 +1,6 @@
 import React from "react";
 import ItemDetail from "./ItemDetail";
 class ContainerItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <React.Fragment>
