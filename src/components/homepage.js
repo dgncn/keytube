@@ -4,18 +4,29 @@ import ContainerItem from "./ContainerItem";
 class Homepage extends Component {
   constructor(props) {
     super(props);
-    this.state = { count: 1, textVal: "" };
+    this.state = { inputValue: "", keyList: [] };
 
-    this.changeText = this.changeText.bind(this);
+    this.getText = this.getText.bind(this);
+    this.addKey = this.addKey.bind(this);
   }
 
-  changeText() {
-    const { textVal } = this.state;
+  getText(event) {
+    this.setState({
+      inputValue: event.target.value
+    });
+  }
 
-    console.log(textVal);
-    this.setState(num => ({
-      count: this.state.count + 1
-    }));
+  addKey() {
+    const { inputValue } = this.state;
+
+    this.setState(state => {
+      const list = [...state.keyList, inputValue];
+
+      return {
+        keyList: list,
+        inputValue: ""
+      };
+    });
   }
 
   render() {
@@ -27,11 +38,21 @@ class Homepage extends Component {
         <div className="main-content">
           <div className="search-container">
             <div className="search-fields">
-              <input type="text" name="keyword" onChange={this.getText} />
-              <button onClick={this.changeText}>Ekle</button>
+              <input
+                type="text"
+                name="keyword"
+                value={this.state.inputValue}
+                onChange={event => this.getText(event)}
+              />
+              <button type="button" onClick={this.addKey}>
+                Ekle
+              </button>
             </div>
           </div>
           <div className="container">
+            {this.state.keyList.map((keyItem, index) => {
+              return <ContainerItem key={index} items={obj.ids} />;
+            })}
             <ContainerItem items={obj.ids} />
             <ContainerItem items={obj.ids} />
           </div>

@@ -6,8 +6,6 @@ class ContainerItem extends React.Component {
       <React.Fragment>
         <div className="container-item">
           {this.props.items.map((item, i) => {
-            //console.log("Entered");
-            // Return the element. Also pass key
             return <ItemDetail key={i} name={item} />;
           })}
         </div>
